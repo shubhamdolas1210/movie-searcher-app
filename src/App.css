@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--css-white);
+  font-size: 1.5rem;
+  padding: 10px 0;
+  background-color: var(--css-primary);
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.searchbar input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  width: 500px;
+}
+
+.searchbar input::placeholder {
+  color: #bbb;
+}
+
+.searchbar button {
+  padding: 6px;
+  background-color: var(--css-primary);
+  border-radius: 0 10px 10px 0;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.movie-card {
+  background-color: var(--css-white);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.movie-card p {
+  margin: 5px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.container p {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .searchbar input {
+    width: 250px;
+  }
+  .movie-card {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .searchbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .searchbar input {
+    width: 80%;
+  }
+  .movie-card {
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .searchbar input {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  .searchbar svg {
+    padding: 8px;
+    font-size: 25px;
+  }
+  .movie-card {
+    width: 140px;
+  }
+  .movie-card img {
+    height: 220px;
+  }
+}

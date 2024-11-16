@@ -1,0 +1,33 @@
+.modal-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #1c1f26;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  /* text-align: center; */
+  outline: none;
+}
+
+.modal-box img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: var(--css-primary);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
